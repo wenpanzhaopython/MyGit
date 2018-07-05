@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        img{
+            height: 200px;
+            width: 200px;
+            border-radius: 20px;
+        }
+
+        .jinjia{
+            text-decoration: line-through;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    {% for i in items %}
+
+        <img src="{{ i.icon }}" alt="">
+
+        <span>{{ i.name }}</span>
+
+        <span>  </span>
+
+        <span class="jinjia">{{ i.price }}</span>
+
+        <span>{{ i.inprice }}</span>
+
+    {% endfor %}
+
+</body>
+</html>

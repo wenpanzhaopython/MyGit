@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+    {% for c in companies %}
+        <li>{{ c.name }}的地址是:{{ c.address }}</li>
+    {% endfor %}
+
+</body>
+</html>
